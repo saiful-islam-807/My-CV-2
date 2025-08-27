@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Saiful Islam ph: 01610-253221 -->
+<html>
+<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<style>
+		
+		</style>
+		<title>My CV</title>
+</head>
+<body>
+		<section id="body">
+				<div id="info1">
+				  <img src="Saiful-Islam1.1.jpg" alt="My pic">
+				  
+				  <span class="name">Saiful Islam</span>
+				  <span class="title">Software Engineer</span>
+				  
+				  <span class="cd">Contact Details</span>
+				  <a href="#"><img src="phone-3114.png" alt="My pic">01610-253221</a>
+				  <a href="#"><img src="mail-5888.png" alt="My pic"><span style="font-size: 12px;">mdsaifulislammoniri@gmail.com</span></a>
+				  <a href="#"><img src="location-2952.png" alt="My pic">Subarnachar, Noakhali.</a>
+				  
+				  <span class="skills">Skills</span>
+				  <ul>
+				    <li>A electrician</li>
+				    <li>Python</li>
+				    <li>C++</li>
+				    <li>JAVA</li>
+				    <li>html & css</li>
+				  </ul>
+				  
+				  <span class="language">Language</span>
+				  <ul>
+				    <li>English: Fluent</li>
+				    <li>Bangla: Native</li>
+				    <li>Urdu: Conversational</li>
+				    <li>Arabic: Conversational</li>
+				  </ul>
+				</div>
+				<div id="info2">
+				  <span class="profile">Profile</span>
+				  <div style="font-size: 15px;">
+				    I am interested in becoming a software engineer. I aim to be proficient in various programming languages and skilled at creating high-quality code. I want to be adept at problem-solving and build a strong foundation in computer science. I am a good communicator and enjoy working collaboratively with others.
+				  </div>
+				  <span class="we">Work Experience</span>
+				  <div>
+				    <b>Personal Projects:</b>
+				    <ul>
+				      <li><i>Responsive Portfolio Website:</i> Developed a personal portfolio website using HTML, CSS, and JavaScript. <br> (Link: [website link])</li>
+				      <br>
+				      <li><i>E-commerce Product Page:</i> Created a product page for an e-commerce website using HTML and CSS. <br> (Link: [website link])</li>
+				      <br>
+				      <li><i>Simple Blog Website:</i> Developed a simple blog website with multiple pages using HTML and CSS. <br> (Link: [website link])</li>
+				    </ul>
+				  </div>
+				  <span class="edu">Educational</span>
+				  <div>
+				    <b>Secondary School Certificate (SSC)</b>
+				    <br>
+				    Fakhrul Islam Dakhil Madrasah | Subarnachar, Noakhali.
+				    <br>
+				    jan 2021 - dec 2022, <br> GPA: <b>3.44</b>
+				    <br><br>
+				    <b>Higher Secondary Certificate (HSC)</b>
+				    <br>
+				    Robbania Fazil Madrasah | Subarnachar, Noakhali.
+				    <br>
+				    jan 2023 - dec 2024
+				    <br>
+				    GPA: <b>Awaiting</b> [ Expected: sep 2025 ]
+				    <br>
+				    <button style="border: none; background: initial;" id="printButton" onclick="printWithCustomTitle()">print now</button>
+				  </div>
+				</div>
+		</section>
+	 <!-- <img src="professional-cv-template-.jpg.webp" alt=""> -->
+		<script>
+		function printWithCustomTitle() {
+				const printButton = document.getElementById('printButton');
+				requestAnimationFrame(() => {
+						printButton.style.display = 'none';
+				});
+				const now = new Date();
+				const day = now.getDate();
+				const month = now.getMonth() + 1;
+				const year = now.getFullYear();
+				const hours = now.getHours();
+				const minutes = now.getMinutes();
+				const formattedTime = `${day}-${month < 10 ? '0' : ''}${month}-${year} ${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+				document.title = `your CV {${formattedTime}}`;
+				window.print();
+				}
+		</script>
+</body>
+</html>

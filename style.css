@@ -1,0 +1,134 @@
+  /* file name: 00-CV.css */
+  body {
+  		margin: 0;
+  		background: beige;
+  }
+  #body{
+				background: #fff url('xprofessional-cv-template-.jpg.webp') no-repeat;
+				width: 19cm;
+  		min-height: 27.5cm;
+  		border-radius: 0.8cm;
+  		margin: 0 auto;
+  		box-sizing: border-box;
+  		display: flex;
+  		flex-direction: row;
+  		flex-wrap: wrap;
+  		letter-spacing: 0.7px;
+  }
+  
+  /* 1st part */
+  div#info1 {
+  		width: 7.2cm;
+  		height: 27.5cm;
+  		background-color: #1d3246dd;
+  		border-radius: 0.8cm 0 0 0.8cm;
+  		border-right: 1mm solid #111b;
+  		padding-top: 1cm;
+  		box-sizing: border-box;
+  }
+  #info1 > img {
+  		width: 5.2cm;
+  		height: 5.2cm;
+  		border: 1mm solid whitesmoke;
+  		border-radius: 50%;
+  		display: block;
+  		margin: auto;
+  		box-sizing: border-box;
+  }
+  #info1 .name {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		font-weight: bold;
+  		font-size: 2.3em;
+  		margin-top: 0.8cm;
+  		box-sizing: border-box;
+  }
+  #info1 .title {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		font-style: italic;
+  		font-size: 1.5em;
+  		margin-top: 0.3cm;
+  		box-sizing: border-box;
+  }
+  #info1 .cd, .skills, .language {
+  		display: block;
+  		color: white;
+  		text-indent: 0.7cm;
+  		font-weight: bold;
+  		font-size: 1.4em;
+  		margin-top: 1.3cm;
+  		box-sizing: border-box;
+  }
+  #info1 .cd { margin-top: 1.7cm; }
+  
+  #info1 a {
+  		display: block;
+  		color: white;
+  		text-decoration: none;
+  		text-indent: 0.4cm;
+  		font-size: 1em;
+  		align-self: center;
+  		margin-top: 0.4cm;
+  		box-sizing: border-box;
+  }
+  #info1 a img {
+  		width: 0.7em;
+  		height: 0.7em;
+  		display: inline-block;
+  		margin: auto 0.3cm;
+  		align-content: center
+  }
+  #info1 li {
+  		font-size: 1em;
+  		line-height: 1.3em;
+  		color: white;
+  }
+  
+  /* 2nd part */
+  div#info2 {
+  		width: 11.8cm;
+  		height: 27.5cm;
+  		background-color: #aaa2;
+  		border-radius: 0 0.8cm 0.8cm 0;
+  		padding: 0 1cm;
+  		padding-top: 0.5cm;
+  		box-sizing: border-box;
+  }
+  #info2 .profile, .we, .edu {
+  		display: block;
+  		color: black;
+  		font-weight: bold;
+  		font-size: 1.5em;
+  		margin-top: 0.7cm;
+  		box-sizing: border-box;
+  }
+  #info2 div {
+  		height: 4cm;
+  		/* border: 1px solid; */
+  		margin-top: 0.6cm;
+  		margin-bottom: 0;
+  		box-sizing: border-box;
+  		position: relative;
+  		line-height: 1.2em;
+  }
+  #info2 div:nth-of-type(2) { height: 8.8cm; }
+  #info2 div:nth-of-type(3) { height: 6cm; }
+  #info2 div ul {
+  		position: absolute;
+  		left: -0.7cm;
+  		z-index: 1;
+  }
+  
+  @media print {
+  		body {
+  				-webkit-print-color-adjust: exact;
+  				print-color-adjust: exact;
+  		}
+  		#body {
+  				margin: 0;
+  				padding: 0;
+  		}
+  }
